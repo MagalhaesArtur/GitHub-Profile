@@ -11,18 +11,13 @@ import UserProfile from "./components/UserProfile";
 
 function App() {
   let [search, setSearch] = useState(localStorage.getItem("search"));
-  let [loading, setLoading] = useState(true);
 
   const handleSearch = async (data) => {
     setSearch(data);
     console.log(data);
   };
   useEffect(() => {
-    console.log(search);
-
     localStorage.setItem("search", search);
-
-    console.log(localStorage.getItem("search"));
   }, [search]);
 
   return (

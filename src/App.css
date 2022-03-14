@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .main {
   width: 100vw;
   height: 100vh;
@@ -10,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 400px;
+  min-width: 500px;
   height: 200px;
   background: rgb(179, 19, 19);
   border-radius: 20px;
@@ -30,8 +35,17 @@
   padding: 10px;
   border-radius: 20px;
   outline: none;
-  background-color: rgb(184, 175, 175);
+  background-color: #fff;
+  font-size: 17px;
   border: 2px transparent solid;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 50ms;
+  transition-duration: 300ms;
+}
+.input:hover,
+.input:focus {
+  box-shadow: 0 0 1.5em rgb(22, 36, 80);
 }
 
 .btn {
@@ -51,7 +65,8 @@
 }
 .btn:hover {
   cursor: pointer;
-  background-color: gold;
+  background-color: #111;
+  color: rgb(230, 15, 15);
   box-shadow: 0 0 1em rgb(22, 36, 80);
 }
 .bio {
@@ -71,12 +86,13 @@
   flex-direction: column;
   align-items: center;
   width: 600px;
-  height: 400px;
+  min-height: 400px;
   border-radius: 20px;
 }
 .profileContainer img {
   width: 150px;
   border-radius: 50%;
+  box-shadow: 0 0 1em rgb(22, 36, 80);
 }
 .repTitle {
   margin-bottom: 60px;
@@ -108,4 +124,46 @@
   cursor: pointer;
   background-color: #e74c3c;
   box-shadow: 0 0 1em rgb(22, 36, 80);
+}
+
+.repsContainer {
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+.itemContainer {
+  background-color: #c0b9b994;
+  margin: 10px 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 200px;
+}
+.itemContainer a {
+  text-decoration: none;
+  color: black;
+  background-color: #222;
+  border: 2px solid #222;
+  color: #eee;
+  border-radius: 15px;
+  padding: 10px;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-delay: 50ms;
+  transition-duration: 300ms;
+}
+.itemContainer a:hover {
+  background-color: #e5e5e5;
+  color: #222;
+  box-shadow: 0 0 1em rgb(22, 36, 80);
+}
+.itemContainer p {
+  margin-bottom: 20px;
 }
