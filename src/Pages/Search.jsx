@@ -1,20 +1,16 @@
 import React, { useState, useContext } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-import { ApiContext } from "../contexts/ApiContext";
 
 const Search = ({ handleSearch, search }) => {
   const navigate = useNavigate();
   let [searchLocal, setSearchLocal] = useState("");
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     handleSearch(searchLocal);
-    console.log(searchLocal, search);
+    const user = await localStorage.getItem("search");
     e.preventDefault();
-
-    setTimeout(() => {
-      navigate("/profile");
-    }, 1000);
+    navigate("/profile");
   };
 
   const handleChangeInput = (e) => {
