@@ -10,7 +10,7 @@
 
 <p align="center">
  <h1>Demo:</h1>
-  <a href="https://git-hub-profile.vercel.app/reps" target="_blank">
+  <a href="https://git-hub-profile.vercel.app/" target="_blank">
     <img alt="Demo on Vercel" src="./assets/vercel.png">
   </a>
 </p>
