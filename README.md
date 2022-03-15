@@ -6,12 +6,12 @@
 
 ## :camera: Demonstração
 
-<img alt="demonstração" title="readme" src="./public/gif/Animação.gif">
+<img alt="demonstração" title="readme" src="./assets/anim.gif">
 
 <p align="center">
  <h1>Demo:</h1>
   <a href="https://git-hub-profile.vercel.app/reps" target="_blank">
-    <img alt="Demo on Vercel" src="./public/gif/Screenshot_2.png">
+    <img alt="Demo on Vercel" src="./assets/vercel.png">
   </a>
 </p>
 
@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✔️React
 
-✔️Styled Components
+✔️React Icons
 
 ✔️React Router DOM
 
@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Uma simples lista de tarefas integrada com uma api de tarefas.
+Uma aplicação que exibe os dados de qualquer usuário do GitHub.
 
 <h1 align="center">O que aprendi 👨‍💻</h1>
 <ul>
@@ -53,5 +53,4 @@ Uma simples lista de tarefas integrada com uma api de tarefas.
 
 ---
 
-<hr>
 <p>Made with 💜 by João Artur 👋 See my <a href="https://www.linkedin.com/in/magalhesartur/">Linkedin</a></p>
